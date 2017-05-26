@@ -1,0 +1,1 @@
+docker run --restart on-failure -e AWS_ACCESS_KEY_ID='ACCESSKEY' -e AWS_SECRET_ACCESS_KEY='SECRETKEY' -e NO_THREADS=1 tweetsentimentanalysis/analyzer

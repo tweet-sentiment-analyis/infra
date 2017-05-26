@@ -1,0 +1,26 @@
+{
+    "UserData": "USERDATAVAR", 
+    "LaunchConfigurationName": "ASE_LC_Analyzer", 
+    "ImageId": "ami-083d5e68", 
+    "KeyName": "SSHKEYNAME", 
+    "SecurityGroups": [
+        SECURITYGROUPID
+    ], 
+    "ClassicLinkVPCSecurityGroups": [], 
+    "InstanceType": "t2.micro", 
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/xvda", 
+                    "Ebs": {
+                        "DeleteOnTermination": true, 
+                        "SnapshotId": "snap-3a0c770b", 
+                        "VolumeSize": 8, 
+                        "VolumeType": "gp2"
+                    }
+        }
+    ], 
+    "InstanceMonitoring": {
+        "Enabled": true
+    }, 
+    "EbsOptimized": false
+}

@@ -1,0 +1,1 @@
+docker run --restart on-failure -e AWS_ACCESS_KEY_ID='ACCESSKEY' -e AWS_SECRET_ACCESS_KEY='SECRETKEY' -e ES_HOST='https://AWSHOSTURL' -e ES_PORT='443' -e ES_USERNAME='elastic' -e ES_PASSWORD='changeme' tweetsentimentanalysis/elasticsearch-producer:0.0.1

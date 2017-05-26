@@ -1,0 +1,10 @@
+{
+    "QueueName": "fetched-tweets", 
+    "Attributes": {
+        "MessageRetentionPeriod": "345600", 
+        "MaximumMessageSize": "262144",
+        "ReceiveMessageWaitTimeSeconds": "0", 
+        "DelaySeconds": "0", 
+        "VisibilityTimeout": "30"
+    }
+}

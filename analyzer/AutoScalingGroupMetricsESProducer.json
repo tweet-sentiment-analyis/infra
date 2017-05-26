@@ -1,0 +1,14 @@
+{
+    "AutoScalingGroupName": "ASE_ASG_ESProducer",
+    "Metrics": [
+        "GroupMinSize",
+        "GroupMaxSize",
+        "GroupDesiredCapacity",
+        "GroupInServiceInstances",
+        "GroupPendingInstances",
+        "GroupStandbyInstances",
+        "GroupTerminatingInstances",
+        "GroupTotalInstances"
+    ],
+    "Granularity": "1Minute"
+}

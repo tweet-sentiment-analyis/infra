@@ -1,0 +1,21 @@
+{
+    "AutoScalingGroupName": "ASE_ASG_Analyzer", 
+    "LaunchConfigurationName": "ASE_LC_Analyzer", 
+    "MinSize": 1, 
+    "MaxSize": 5, 
+    "DesiredCapacity": 1, 
+    "DefaultCooldown": 30, 
+    "AvailabilityZones": [
+        "us-west-2a", 
+        "us-west-2b", 
+        "us-west-2c"
+    ], 
+    "LoadBalancerNames": [], 
+    "TargetGroupARNs": [], 
+    "HealthCheckType": "EC2", 
+    "HealthCheckGracePeriod": 30,  
+    "TerminationPolicies": [
+        "Default"
+    ], 
+    "NewInstancesProtectedFromScaleIn": false
+}
