@@ -14,11 +14,7 @@ Please provide the aws access key and the aws secret key when promted. Please ch
 
 Setting up the backend:
 1. 	Set up elastic search by running the Setup_ElasticSearch.sh script.
-2.	Setting up elastic search can take up to 15 min. The setup can only continue once elastic search has been correctly setup.  	Check the status of elastic search under: https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2# or run the following command in the terminal: 
-
-aws es describe-elasticsearch-domain --domain-name "tweetanalyzer" --query "DomainStatus.Endpoint"
-
-if the resopnse is not 'null' elastic search is ready
+2.	Setting up elastic search can take up to 15 min. The setup can only continue once elastic search has been correctly setup.  	Check the status of elastic search under: https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2# or run the following command in the terminal:" aws es describe-elasticsearch-domain --domain-name "tweetanalyzer" --query "DomainStatus.Endpoint" " if the resopnse is not 'null' elastic search is ready
 3. Open the setup-ec2.sh file with any text editor and fill in the three lines at the top with your credentials and the name of the ssh key:
 
 AWS_ACCESS_KEY_ID="FILLOUT"
