@@ -1,7 +1,15 @@
 Infrastructure Setup
 ====================
 
-This repository holds configuration files in order to set up the cloud environment on AWS.
+This repository holds configuration files in order to set up the cloud environment on AWS. The infrastructure will look like the following:
+
+![Deployment Diagram](https://github.com/tweet-sentiment-analyis/infra/blob/master/deployment-diagram.png)
+
+You may find the dedicated components' repository at the listed locations:
+* [Fetcher (aka. Registrar)](https://github.com/tweet-sentiment-analyis/fetcher)
+* [Tweet Analyzer](https://github.com/tweet-sentiment-analyis/analyzer)
+* [Elasticsearch Consumer Producer](https://github.com/tweet-sentiment-analyis/elasticsearch-producer)
+* [Webinterface](https://github.com/tweet-sentiment-analyis/webinterface)
 
 # How to setup
 
