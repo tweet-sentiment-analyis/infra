@@ -19,6 +19,8 @@ Once ASW CLI is installed it has to be configured using the following command in
 Please provide the AWS access key and secret key when promted. 
 Please also choose `us-west-2` as the region, and leave the last prompt empty.
 
+The setup script starts instances that are based on a public AMI created by us. The AMI is based on the Amazon Linux AMI 2017.03.0. It it was extended by installing the docker deamon on the machine, and also pull the latest docker containers for the project, to reduce the startup times of the instances. To use a different AMI one has to change the `ImageId` and the `SnapshotId`in the  LaunchConfigurationsAnalyzer.json and LaunchConfigurationsESProducer.json file.
+
 ## Setting up the backend:
 1.  Set up elastic search by running the script `Setup_ElasticSearch.sh`. Setting up elastic search can take up to 15 min. Note, that the setup can only continue once Elasticsearch has been correctly setup.
 2.  Check the status of elastic search at [https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2](https://us-west-2.console.aws.amazon.com/es/home?region=us-west-2#) or run the following command in the terminal: `aws es describe-elasticsearch-domain --domain-name "tweetanalyzer" --query "DomainStatus.Endpoint"`. If the resopnse is not `null` Elasticsearch is ready.
